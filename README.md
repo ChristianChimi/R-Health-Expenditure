@@ -8,3 +8,7 @@ This project aims to analyze trends and patterns in healthcare spending using th
 - Melt to transform to long format the df.
 
 ## **R analysis** available at:  https://christianchimi.github.io/R-Health-Expenditure/R-Expenditure2.html
+- Plot expenditure in 2015 for every country.
+- Indentify and plot top 20 countries in  2015 by Health Expenditure
+- Plot Italy and France expenditure over the years
+- Statistics: distribution, mean, median, variance and standard devation for expenditure in 2015.
