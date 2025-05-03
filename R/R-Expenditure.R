@@ -1,3 +1,4 @@
+
 library(tseries)
 library(forecast)
 library(dplyr)
@@ -99,4 +100,22 @@ plot(forecast_2023, main = "2023 % Health expenditure on GDP",
      ylab = "Expenditure (% GDP)", xlab = "Year")
 
 forecast_2023$mean
+
+
+
+df_italia <- df %>%
+  filter(Country.Name == "Italy", !is.na(Expenditure)) %>%
+  arrange(Year)
+
+# Create time series
+serie_ts <- ts(df_italia$Expenditure,
+               start = df_italia$Year[1],
+               frequency = 2)  # it should be 1, but the minimum is 2
+
+stl_italia <- stl(serie_ts, s.window = "periodic")
+
+# Plot
+plot(stl_italia, main = "STL Decomposition - Health Expenditure (Italy)")
+
+
 
