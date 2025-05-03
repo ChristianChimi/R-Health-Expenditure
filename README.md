@@ -12,5 +12,8 @@ This project aims to analyze trends and patterns in healthcare spending using th
 - Plot healthcare expenditure trends over time for Italy and France.
 - Statistics: distribution, mean, median, variance and standard devation for expenditure in 2015.
 
-## **ARIMA on R**
+## **ARIMA in R**
 - Both the original time series and the differenced series were analyzed to model and forecast healthcare expenditure for 2023.
+
+## **STL Decomposition in R**
+- Even if i have yearly data (it would be nice to have semestral and use Frequency=2), i wanted to identify trends and reaminders, that show shock like 2008 crisis.
