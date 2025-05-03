@@ -1,8 +1,9 @@
-
-
+library(tseries)
+library(forecast)
 library(dplyr)
 library(ggplot2)
 library(tidyverse)
+library(glmnet)
 
 
 df <- read.csv("../Dataset/expenditure_cleaned.csv")
@@ -57,4 +58,60 @@ var(df_2015$Expenditure, na.rm = TRUE)     # Variance
 sd(df_2015$Expenditure, na.rm = TRUE)      # Standard Deviation
 
 
+df_aggregated <- df %>%
+  group_by(Country.Name, Year) %>%
+  summarise(Expenditure = mean(Expenditure, na.rm = TRUE), .groups = 'drop')  # Aggrega i dati per paese e anno
+
+# Passaggio 2: Trasformazione in formato wide (ogni anno diventa una colonna)
+df_wide <- df_aggregated %>%
+  pivot_wider(names_from = Year, values_from = Expenditure)
+
+#ARIMA prediction
+
+# Filtro per selezionare i dati relativi all'Italia
+df_italy <- df_wide %>% filter(Country.Name == "Italy")
+spesa_italia <- df_italy[, as.character(2000:2022)]
+spesa_italia <- as.numeric(spesa_italia)
+spesa_ts <- ts(spesa_italia, start = 2000, frequency = 1)
+adf_test <- adf.test(spesa_ts)
+print(adf_test)
+spesa_diff <- diff(spesa_ts)
+plot(spesa_diff, main = "Serie Temporale Differenziata", ylab = "Differenza Spesa % PIL", xlab = "Anno")
+arima_model <- auto.arima(spesa_diff)
+summary(arima_model)
+forecast_2023 <- forecast(arima_model, h = 1)
+plot(forecast_2023, main = "Differences series of health expenditure (% GDP)", ylab = "Difference % PIL", xlab = "Anno")
+
+# Stampare il valore previsto per il 2023
+forecast_2023$mean
+
+library(forecast)
+library(tseries)
+library(dplyr)
+
+# Filtro per selezionare i dati relativi all'Italia
+df_italy <- df_wide %>% filter(Country.Name == "Italy")
+spesa_italia <- df_italy[, as.character(2000:2022)]
+spesa_italia <- as.numeric(spesa_italia)
+
+# Creazione della serie temporale
+spesa_ts <- ts(spesa_italia, start = 2000, frequency = 1)
+
+# Test ADF (facoltativo)
+adf_test <- adf.test(spesa_ts)
+print(adf_test)
+
+# Costruzione del modello ARIMA direttamente sulla serie
+arima_model <- auto.arima(spesa_ts)
+summary(arima_model)
+
+# Previsione per il 2023
+forecast_2023 <- forecast(arima_model, h = 1)
+
+# Plot della serie con la previsione
+plot(forecast_2023, main = "Previsione Spesa Sanitaria (% PIL)", 
+     ylab = "Spesa % PIL", xlab = "Anno")
+
+# Stampare il valore previsto per il 2023
+forecast_2023$mean
 
