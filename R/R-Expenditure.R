@@ -56,13 +56,5 @@ median(df_2015$Expenditure, na.rm = TRUE)  # Median
 var(df_2015$Expenditure, na.rm = TRUE)     # Variance
 sd(df_2015$Expenditure, na.rm = TRUE)      # Standard Deviation
 
-# Passaggio 1: Raggruppa i dati per 'Country' e 'Year' e aggrega (calcolando la media)
-df_aggregated <- df %>%
-  group_by(Country.Name, Year) %>%
-  summarise(Expenditure = mean(Expenditure, na.rm = TRUE), .groups = 'drop')  # Aggrega i dati per paese e anno
-
-# Passaggio 2: Trasformazione in formato wide (ogni anno diventa una colonna)
-df_wide <- df_aggregated %>%
-  pivot_wider(names_from = Year, values_from = Expenditure)
 
 
