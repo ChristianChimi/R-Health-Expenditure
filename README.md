@@ -6,7 +6,7 @@ This project aims to analyze trends and patterns in healthcare spending using th
 - Drop null values, also 2023 and 2024 that are null because they are too recent.
 - Melt to transform to long format the df.
 
-## **R analysis** available at:  https://christianchimi.github.io/R-Health-Expenditure/R-Expenditure2.html
+## **R analysis** available at:  https://christianchimi.github.io/R-Health-Expenditure/R-Expenditure-Analysis.html
 - Plot expenditure in 2015 for every country.
 - Indentify and plot top 20 countries in  2015 by Health Expenditure
 - Plot healthcare expenditure trends over time for Italy and France.
