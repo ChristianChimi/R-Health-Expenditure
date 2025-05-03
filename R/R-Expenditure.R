@@ -2,7 +2,6 @@ library(dplyr)
 library(ggplot2)
 library(tidyverse)
 
-df
 df <- read.csv("../Dataset/expenditure_cleaned.csv")
 head(df)
 
@@ -11,7 +10,7 @@ df_FranceItaly <- df %>%
 
 # Health Expenditure France vs Italy (% of GDP)
 ggplot(df_FranceItaly, aes(x = Year, y = Expenditure, color = Country.Name)) +
-  geom_line(size = 1) +                         
+  geom_line(linewidth = 1) +                         
   theme_minimal() +                            
   labs(title = "Health Expenditure France vs Italy (% of GDP)",
        x = "Year", y = "Expenditure (% of GDP",
