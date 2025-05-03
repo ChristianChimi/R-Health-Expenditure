@@ -1,5 +1,4 @@
 ## **R-Health-Expenditure**
-
 This project aims to analyze trends and patterns in healthcare spending using the R programming language. The analysis includes data exploration, visualizations, and statistical modeling to uncover regional disparities, long-term trends.
 
 ## **Pre-Processing in Python**
@@ -10,5 +9,8 @@ This project aims to analyze trends and patterns in healthcare spending using th
 ## **R analysis** available at:  https://christianchimi.github.io/R-Health-Expenditure/R-Expenditure2.html
 - Plot expenditure in 2015 for every country.
 - Indentify and plot top 20 countries in  2015 by Health Expenditure
-- Plot Italy and France expenditure over the years
+- Plot healthcare expenditure trends over time for Italy and France.
 - Statistics: distribution, mean, median, variance and standard devation for expenditure in 2015.
+
+## **ARIMA on R**
+- Both the original time series and the differenced series were analyzed to model and forecast healthcare expenditure for 2023.
