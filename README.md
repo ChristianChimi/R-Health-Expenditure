@@ -2,18 +2,18 @@
 This project aims to analyze trends and patterns in healthcare spending using the R programming language. The analysis includes data exploration, visualizations, and statistical modeling to uncover regional disparities, long-term trends.
 
 ## **Pre-Processing in Python**
-- Loading, filtering df for years after 1999 (most consistent part of the dataset).
-- Drop null values, also 2023 and 2024 that are null because they are too recent.
-- Melt to transform to long format the df.
+    - Loading, filtering df for years after 1999 (most consistent part of the dataset).
+    - Drop null values, also 2023 and 2024 that are null because they are too recent.
+    - Melt to transform to long format the df.
 
 ## **R analysis** available at:  https://christianchimi.github.io/R-Health-Expenditure/R-Expenditure-Analysis.html
-- Plot expenditure in 2015 for every country.
-- Indentify and plot top 20 countries in  2015 by Health Expenditure
-- Plot healthcare expenditure trends over time for Italy and France.
-- Statistics: distribution, mean, median, variance and standard devation for expenditure in 2015.
+    - Plot expenditure in 2015 for every country.
+    - Indentify and plot top 20 countries in  2015 by Health Expenditure
+    - Plot healthcare expenditure trends over time for Italy and France.
+    -  Statistics: distribution, mean, median, variance and standard devation for expenditure in 2015.
 
 ## **ARIMA in R**
-- Both the original time series and the differenced series were analyzed to model and forecast healthcare expenditure for 2023.
+    - Both the original time series and the differenced series were analyzed to model and forecast healthcare expenditure for 2023.
 
 ## **STL Decomposition in R**
-- Even if i have yearly data (it would be nice to have semestral and use Frequency=2), i wanted to identify trends and reaminders, that show shock like 2008 crisis.
+    - Even if i have yearly data (it would be nice to have semestral and use Frequency=2), i wanted to identify trends and reaminders, that show shock like 2008 crisis.
