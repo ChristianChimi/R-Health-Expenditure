@@ -23,6 +23,15 @@ This project aims to analyze trends and patterns in healthcare spending using th
         - Both the original time series and the differenced series were analyzed to better understand the trend and seasonal components in healthcare expenditure.
         - The ARIMA model was then used to forecast future expenditure trends for 2023.
 
+## **Key Insights**
+    - 2015 Healthcare Expenditure: The analysis revealed significant disparities in healthcare spending across countries, with the top 20 countries displaying the highest healthcare expenditure in 2015. This insight can guide policy discussions on resource allocation.
+    - Healthcare Trends: Trends in healthcare spending for Italy and France were analyzed, showing how expenditures have evolved over time, which can be valuable for long-term budget planning and healthcare policy decisions.
+    - Expenditure Distribution: Descriptive statistics revealed a skewed distribution in healthcare expenditure, with a few countries spending disproportionately more than others, while the majority spent relatively little.
+    - Forecasting 2023: The ARIMA model forecasted healthcare expenditure for 2023, showing expected trends and highlighting potential future challenges or areas where healthcare funding might need to be adjusted.
+
+## **Conclusions**
+This project provided a comprehensive analysis of global healthcare expenditure trends using both R and Python for data processing, exploration, and forecasting. By examining expenditure patterns in 2015, long-term trends, and forecasting future spending, the project identified regional disparities and provided insights that can inform policy makers about the evolving landscape of healthcare spending. The ARIMA model's forecast for 2023 offers a data-driven perspective on future healthcare expenditure, helping anticipate future challenges and opportunities in the healthcare sector. This analysis can serve as a valuable tool for governments and organizations to make informed decisions regarding healthcare budgets and planning.
+
 ## **Technologies Used**
 - **Python**, **Pandas**, **R**
 - **Machine Learning for forecasting** and **statistical analysis**
