@@ -13,11 +13,11 @@ This project aims to analyze trends and patterns in healthcare spending using th
 - The main analysis was performed in R, where several key tasks were completed:
   - Expenditure in 2015:
     - Plotted healthcare expenditure for each country in 2015.
-      - Identified and plotted the top 20 countries with the highest healthcare expenditure in 2015.
-      - Healthcare Trends Over Time:
-        - Plotted healthcare expenditure trends over time for Italy and France, showing the evolution of healthcare spending in these countries.
-      - Descriptive Statistics:
-        - Calculated the distribution, mean, median, variance, and standard deviation for healthcare expenditure in 2015 to understand the overall expenditure distribution.
+    - Identified and plotted the top 20 countries with the highest healthcare expenditure in 2015.
+  - Healthcare Trends Over Time:
+    - Plotted healthcare expenditure trends over time for Italy and France, showing the evolution of healthcare spending in these countries.
+    - Descriptive Statistics:
+      - Calculated the distribution, mean, median, variance, and standard deviation for healthcare expenditure in 2015 to understand the overall expenditure distribution.
 
 ## **ARIMA in R**
 - I applied the ARIMA (AutoRegressive Integrated Moving Average) model in R to analyze and forecast healthcare expenditure for 2023:
