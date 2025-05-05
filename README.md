@@ -9,7 +9,7 @@ This project aims to analyze trends and patterns in healthcare spending using th
     - Handling Missing Data: Dropped rows with null values, including 2023 and 2024 data, which were missing due to their recent nature.
     - Reshaping Data: Used melting to transform the dataframe from a wide format to a long format, making it easier to analyze trends over time.
 
-## **R analysis** available at:  https://christianchimi.github.io/R-Health-Expenditure/R-Expenditure-Analysis.html
+## **R analysis** [R page avalable here!]([https://www.esempio.com](https://christianchimi.github.io/R-Health-Expenditure/R-Expenditure-Analysis.html))
     - The main analysis was performed in R, where several key tasks were completed:
         - Expenditure in 2015:
            - Plotted healthcare expenditure for each country in 2015.
