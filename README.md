@@ -22,7 +22,7 @@ This project aims to analyze trends and patterns in healthcare spending using th
 ## **ARIMA in R**
 - I applied the ARIMA (AutoRegressive Integrated Moving Average) model in R to analyze and forecast healthcare expenditure for 2023:
   - Both the original time series and the differenced series were analyzed to better understand the trend and seasonal components in healthcare expenditure.
-    - The ARIMA model was then used to forecast future expenditure trends for 2023.
+  - The ARIMA model was then used to forecast future expenditure trends for 2023.
 
 ## **Key Insights**
 - 2015 Healthcare Expenditure: The analysis revealed significant disparities in healthcare spending across countries, with the top 20 countries displaying the highest healthcare expenditure in 2015. This insight can guide policy discussions on resource allocation.
