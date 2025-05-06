@@ -30,9 +30,9 @@ This project aims to analyze trends and patterns in healthcare spending using th
 - Expenditure Distribution: Descriptive statistics revealed a skewed distribution in healthcare expenditure, with a few countries spending disproportionately more than others, while the majority spent relatively little.
 - Forecasting 2023: The ARIMA model forecasted healthcare expenditure for 2023, showing expected trends and highlighting potential future challenges or areas where healthcare funding might need to be adjusted.
 
-## **Conclusions**
-This project provided a comprehensive analysis of global healthcare expenditure trends using both R and Python for data processing, exploration, and forecasting. By examining expenditure patterns in 2015, long-term trends, and forecasting future spending, the project identified regional disparities and provided insights that can inform policy makers about the evolving landscape of healthcare spending. The ARIMA model's forecast for 2023 offers a data-driven perspective on future healthcare expenditure, helping anticipate future challenges and opportunities in the healthcare sector. This analysis can serve as a valuable tool for governments and organizations to make informed decisions regarding healthcare budgets and planning.
-
 ## **Technologies Used**
 - **Python**, **Pandas**, **R**
 - **Machine Learning for forecasting** and **statistical analysis**
+
+## **Conclusions**
+This project provided a comprehensive analysis of global healthcare expenditure trends using both R and Python for data processing, exploration, and forecasting. The ARIMA model's forecast for 2023 offers a data-driven perspective on future healthcare expenditure, helping anticipate future challenges and opportunities in the healthcare sector.
