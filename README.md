@@ -25,10 +25,10 @@ This project aims to analyze trends and patterns in healthcare spending using th
   - The ARIMA model was then used to forecast future expenditure trends for 2023.
 
 ## **Key Insights**
-- 2015 Healthcare Expenditure: The analysis revealed significant disparities in healthcare spending across countries, with the top 20 countries displaying the highest healthcare expenditure in 2015. This insight can guide policy discussions on resource allocation.
-- Healthcare Trends: Trends in healthcare spending for Italy and France were analyzed, showing how expenditures have evolved over time, which can be valuable for long-term budget planning and healthcare policy decisions.
+- 2015 Healthcare Expenditure: The analysis revealed significant disparities in healthcare spending across countries, with the top 20 countries displaying the highest healthcare expenditure in 2015. 
+- Healthcare Trends: Trends in healthcare spending for Italy and France were analyzed, showing how expenditures have evolved over time.
 - Expenditure Distribution: Descriptive statistics revealed a skewed distribution in healthcare expenditure, with a few countries spending disproportionately more than others, while the majority spent relatively little.
-- Forecasting 2023: The ARIMA model forecasted healthcare expenditure for 2023, showing expected trends and highlighting potential future challenges or areas where healthcare funding might need to be adjusted.
+- Forecasting 2023: The ARIMA model forecasted healthcare expenditure for 2023, showing expected trends and highlighting potential future challenges.
 
 ## **Technologies Used**
 - **Python**, **Pandas**, **R**
